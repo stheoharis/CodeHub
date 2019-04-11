@@ -1,0 +1,47 @@
+
+<div class="row">
+
+    <div class="col-4 ">
+       
+        <table mdbTable
+               mdbTableScroll
+               class="white-text animated slideInLeft"
+               small="true"
+               borderless="true"
+               striped="true"
+               maxHeight="767"
+               scrollY="true">
+
+
+            <thead class="indigo white-text">
+                <tr style="text-align:center">
+                    <th  scope="col">#</th>
+                    <th  scope="col">Country</th>
+                    <th  scope="col">Capital</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr mdbTableCol
+                    *ngFor="let country of Countries;let i = index"
+                    [routerLink]="['detail',country.capital]"
+                    class="animated hoverable"                    
+                    style="text-align:center;cursor:pointer">
+
+                    <th scope="row">{{i+1}}</th>
+                    <td >&nbsp;&nbsp;{{country.name}}</td>
+                    <td style="text-align:center">{{country.capital}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="col-8 ">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+
+

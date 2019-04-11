@@ -1,0 +1,60 @@
+
+<div class="white-text col-12 row animated zoomInRight"
+     *ngFor="let detail of CapitalDetails">
+
+    <mdb-card cascade="true"
+              wider="true"
+              reverse="true"
+              class="my-4">
+
+        <mdb-card-body cascade="true"  style="height:300px;">
+
+            <mdb-card-title  >
+                <h1 class="indigo-text text-center">
+                    <strong>{{detail.capital}}</strong>
+                </h1>
+                    
+                
+            </mdb-card-title>
+
+            <mdb-card-text>
+                <div class="container ">
+                    <div class="col-12 row" >
+
+                        <div class="row col-12">
+                            <div class=" col-6 text-right">
+                                Population:
+                            </div>
+                            <div class=" col-6 ">
+                                {{detail.population}}
+                            </div>                            
+                        </div>
+
+                        <div class="row col-12">
+                            <div class=" col-6 text-right">
+                                Native Name:
+                            </div>
+                            <div class=" col-6 ">
+                                {{detail.nativeName}}
+                            </div>                            
+                        </div>
+
+                        <div class="row col-12 ">
+                            <div class=" col-6 text-right">
+                                Subregion:
+                            </div>
+                            <div class=" col-6 ">
+                                {{detail.subregion }}
+                            </div>                            
+                        </div>
+
+                    </div>
+                </div>
+            </mdb-card-text>
+
+        </mdb-card-body>
+
+    </mdb-card>
+
+</div>
+

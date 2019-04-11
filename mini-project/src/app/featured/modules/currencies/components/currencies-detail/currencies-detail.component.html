@@ -1,0 +1,33 @@
+
+
+<div class=" white-text animated zoomInRight">
+
+    <table mdbTable
+           mdbTableScroll
+           class="white-text "
+           small="true"
+           borderless="true"
+           striped="true"
+           maxHeight="767"
+           scrollY="true">
+
+        <thead class="indigo white-text">
+            <tr style="text-align:center">
+                <th scope="col">Countries using: {{CurrencyCode}}</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr mdbTableCol
+                *ngFor="let country of CountriesWithCurrency;let i = index"
+                style="text-align:center">
+
+                <td>{{country.name}}</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+

@@ -1,0 +1,21 @@
+body,
+html {
+    height: 100vh;
+}
+
+.bg {    
+    background-image: url("/assets/bg3.jpg");    
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgHome {
+    
+    background-image: url("/assets/cities3.jpeg");   
+    height: 100vh;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
